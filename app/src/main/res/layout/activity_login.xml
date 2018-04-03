@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="kta999.entertainment.panamamonk.LoginActivity">
+
+    <ImageView
+        android:contentDescription="App Logo"
+        android:layout_marginTop="75dp"
+        android:id="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="125dp"
+        android:layout_height="125dp" />
+
+    <TextView
+        android:textColor="#212121"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/logo"
+        android:text="@string/app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.facebook.login.widget.LoginButton
+        style="@style/FacebookLoginButton"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="120dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="#212121"
+        android:gravity="center"
+        android:text="@string/developed_by_kta999_software_and_website_development"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
